@@ -8,6 +8,8 @@
 - Ruby
 - JavaScript
 - C++
+- GO
+- Rust
 
 ### Functionalities:
 (SOON)
