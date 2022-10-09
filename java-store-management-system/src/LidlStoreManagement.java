@@ -35,12 +35,9 @@ public class LidlStoreManagement implements StoreManagement {
 
         // iterate through the stores array and for each store, iterate through its employees
         for (Store storeIterator : stores) {
-            for (Employee employeeIterator : storeIterator.getEmployees()) {
-                // if the employee has the given SSN, print their information
-                if (employeeIterator.getSSN() == SSN) {
-                    employeeIterator.printInformation();
-                    return;
-                }
+            if (storeIterator.getEmployee(SSN) != null) {
+                storeIterator.getEmployee(SSN).printInformation();
+                return;
             }
         }
 
